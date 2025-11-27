@@ -12,7 +12,7 @@
 /* Box styling */
 .container div {
   background-color: #f1f1f1;
-  width: 400px;           /* Wider cards */
+  width: auto;           /* Wider cards */
   padding: 20px;
   border-radius: 10px;
   text-align: left;       /* More natural reading */
@@ -38,4 +38,5 @@ h1 {
   text-align: center;
   color: #003366;
 }
+
 
