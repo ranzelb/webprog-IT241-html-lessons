@@ -1,14 +1,40 @@
+/* Container styling */
 .container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;              /* Space between boxes */
   background-color: LightBlue;
+  padding: 20px;
+  border-radius: 10px;
 }
- 
+
+/* Box styling */
 .container div {
   background-color: #f1f1f1;
-  width: 100px;
-  margin: 10px;
-  padding: 10px;
-  text-align: center;  
-  font-size: 30px;
+  width: 250px;           /* Wider cards */
+  padding: 20px;
+  border-radius: 10px;
+  text-align: left;       /* More natural reading */
+  font-size: 18px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Headings inside boxes */
+.container div p:first-child {
+  font-weight: bold;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+/* Global styling */
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background: #e8f4ff;
+}
+
+h1 {
+  text-align: center;
+  color: #003366;
 }
