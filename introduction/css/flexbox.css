@@ -1,42 +1,47 @@
+/* Center all content in the body */
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background: #e8f4ff;
+  text-align: center;          /* Centers inline elements & text */
+  display: flex;
+  flex-direction: column;
+  align-items: center;         /* Centers block elements */
+}
+
+/* Title */
+h1 {
+  color: #003366;
+  margin-bottom: 20px;
+}
+
 /* Container styling */
 .container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;              /* Space between boxes */
+  justify-content: center;     /* Centers flex items */
+  gap: 20px;
   background-color: LightBlue;
   padding: 20px;
   border-radius: 10px;
+  width: 100%;
+  max-width: 1000px;           /* Prevents stretching too wide */
 }
 
 /* Box styling */
 .container div {
   background-color: #f1f1f1;
-  width: auto;           /* Wider cards */
+  width: 250px;
   padding: 20px;
   border-radius: 10px;
-  text-align: left;       /* More natural reading */
+  text-align: left;
   font-size: 18px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-/* Headings inside boxes */
+/* Box headings */
 .container div p:first-child {
   font-weight: bold;
   font-size: 22px;
   margin-bottom: 10px;
 }
-
-/* Global styling */
-body {
-  font-family: Arial, sans-serif;
-  padding: 20px;
-  background: #e8f4ff;
-}
-
-h1 {
-  text-align: center;
-  color: #003366;
-}
-
-
