@@ -1,4 +1,4 @@
-/* PAGE STYLE */
+
 body {
     background-image: url('https://scontent.fmnl17-3.fna.fbcdn.net/v/t1.15752-9/610459653_1632231908215702_2996603428213222403_n.jpg?stp=dst-jpg_s640x640_tt6&_nc_cat=106&ccb=1-7&_nc_sid=0024fc&_nc_ohc=Si5tpmVFuVQQ7kNvwF5VvV6&_nc_oc=AdlG0rLHKI6lRIhTXXDs-tCzLfPwvwKgCx9PhA3gmSW5uIFxIMtidH_JY8czGc1V2Mo&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.fmnl17-3.fna&oh=03_Q7cD4QGfXga0iQ_252fCeKWOwhtrnEmUTCde5VuvrUSAiAdo3A&oe=69833EBC');
     background-size: cover;
@@ -11,7 +11,7 @@ body {
     padding: 0;
 }
 
-/* HEADINGS */
+
 h1 {
     color: white;
     background-color: rgba(0, 51, 102, 0.85);
@@ -25,21 +25,21 @@ h1 {
     letter-spacing: 2px;
 }
 
-/* PARAGRAPHS */
+
 p {
     color: black;
     text-shadow: 1px 1px 5px gray;
     font-size: 18px;
 }
 
-/* IMAGE */
+
 img {
     margin-top: 20px;
     border: 3px solid lightblue;
     box-shadow: 0 0 20px lightblue;
 }
 
-/* CONTAINER (BOXES) */
+
 .container {
     display: flex;
     flex-wrap: wrap;
@@ -47,7 +47,7 @@ img {
     margin-top: 30px;
 }
 
-/* EACH BOX */
+
 .container div {
     background-color: white;
     border: 1px solid lightblue;
@@ -63,14 +63,14 @@ img {
     box-sizing: border-box;
 }
 
-/* HOVER EFFECT */
+
 .container div:hover {
     background-color: lightblue;
     color: black;
     cursor: pointer;
 }
 
-/* BULLETED LISTS */
+
 .container ul {
     list-style-type: disc;
     padding-left: 20px;
@@ -83,7 +83,7 @@ img {
     margin-bottom: 8px;
 }
 
-/* RESOURCE LINKS */
+
 .container a {
     color: #003366;
     text-decoration: none;
@@ -95,7 +95,7 @@ img {
     color: #0055aa;
 }
 
-/* OPTIONAL BOTTOM CONTAINER */
+
 .container-bottom {
     position: fixed;
     bottom: 0;
@@ -112,4 +112,5 @@ img {
     width: 200px;
     font-size: 16px;
     padding: 10px;
+
 }
