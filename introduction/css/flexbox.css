@@ -1,47 +1,101 @@
-/* Center all content in the body */
-body {
-  font-family: Arial, sans-serif;
-  padding: 20px;
-  background: #e8f4ff;
-  text-align: center;          /* Centers inline elements & text */
-  display: flex;
-  flex-direction: column;
-  align-items: center;         /* Centers block elements */
-}
-
-/* Title */
-h1 {
-  color: #003366;
-  margin-bottom: 20px;
-}
-
-/* Container styling */
 .container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;     /* Centers flex items */
-  gap: 20px;
-  background-color: LightBlue;
-  padding: 20px;
-  border-radius: 10px;
-  width: 100%;
-  max-width: 1000px;           /* Prevents stretching too wide */
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: lightblue;
+  padding: 10px;
 }
-
-/* Box styling */
 .container div {
   background-color: #f1f1f1;
-  width: 250px;
-  padding: 20px;
-  border-radius: 10px;
-  text-align: left;
-  font-size: 18px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border: 1px solid white;
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+
 }
 
-/* Box headings */
-.container div p:first-child {
-  font-weight: bold;
-  font-size: 22px;
-  margin-bottom: 10px;
+
+body {
+    background-color: lightblue;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+h1 {
+    color: #003366;
+    text-shadow: 2px 2px 10px ;
+    
+    
+}
+
+h2 {
+    color: black;
+    text-shadow: 2px 2px 10px white;
+}
+
+p {
+    color: black;
+    text-shadow: 1px 1px 5px gray;
+    font-size: 18px;
+}
+
+img {
+    margin-top: 20px;
+    border: 3px solid lightblue;
+    box-shadow: 0 0 20px lightblue;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.container div {
+    background-color: white;
+    border: 1px solid lightblue;
+    width: 300px; 
+    height: auto; 
+    margin: 10px; 
+    color: white;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 15px white;
+    padding: 15px; 
+    box-sizing: border-box;
+}
+
+.container div:hover {
+    background-color: lightblue;
+    color: lightblue;
+    cursor: pointer;
+}
+
+.container-bottom {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0 -5px 10px rgba(255, 0, 0, 0.5);
+    z-index: 1000; 
+
+
+
+.container-bottom .container div {
+    width: 200px; 
+    height: auto;
+    margin: 10px; 
+    font-size: 16px;
+    padding: 10px;
+    box-sizing: border-box;
 }
