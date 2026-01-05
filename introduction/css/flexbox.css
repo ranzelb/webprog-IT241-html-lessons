@@ -1,53 +1,33 @@
-.container {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  background-color: lightblue;
-  padding: 10px;
-}
-.container div {
-  background-color: #f1f1f1;
-  border: 1px solid white;
-  padding: 10px;
-  font-size: 30px;
-  text-align: center;
-
-}
-
-
+/* PAGE STYLE */
 body {
     background-color: lightblue;
-    color: white;
     font-family: Arial, sans-serif;
     text-align: center;
     margin: 0;
     padding: 0;
-    height: 100%;
 }
 
+/* HEADINGS */
 h1 {
     color: #003366;
-    text-shadow: 2px 2px 10px ;
-    
-    
+    text-shadow: 2px 2px 10px gray;
 }
 
-h2 {
-    color: black;
-    text-shadow: 2px 2px 10px white;
-}
-
+/* PARAGRAPHS */
 p {
     color: black;
     text-shadow: 1px 1px 5px gray;
     font-size: 18px;
 }
 
+/* IMAGE */
 img {
     margin-top: 20px;
     border: 3px solid lightblue;
     box-shadow: 0 0 20px lightblue;
 }
 
+/* CONTAINER (BOXES) */
 .container {
     display: flex;
     flex-wrap: wrap;
@@ -55,29 +35,42 @@ img {
     margin-top: 30px;
 }
 
+/* EACH BOX */
 .container div {
     background-color: white;
     border: 1px solid lightblue;
-    width: 300px; 
-    height: auto; 
-    margin: 10px; 
-    color: white;
+    width: 300px;
+    margin: 10px;
+    color: black;               /* ✅ FIXED */
     font-size: 18px;
     display: flex;
-    flex-direction: column; 
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
     box-shadow: 0 0 15px white;
-    padding: 15px; 
+    padding: 15px;
     box-sizing: border-box;
 }
 
+/* HOVER EFFECT */
 .container div:hover {
     background-color: lightblue;
-    color: lightblue;
+    color: black;               /* ✅ FIXED */
     cursor: pointer;
 }
 
+/* BULLETED LISTS */
+.container ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    text-align: left;
+}
+
+.container li {
+    font-weight: bold;
+    color: black;
+}
+
+/* OPTIONAL BOTTOM CONTAINER */
 .container-bottom {
     position: fixed;
     bottom: 0;
@@ -87,15 +80,11 @@ img {
     padding: 10px 0;
     text-align: center;
     box-shadow: 0 -5px 10px rgba(255, 0, 0, 0.5);
-    z-index: 1000; 
-
-
+    z-index: 1000;
+}
 
 .container-bottom .container div {
-    width: 200px; 
-    height: auto;
-    margin: 10px; 
+    width: 200px;
     font-size: 16px;
     padding: 10px;
-    box-sizing: border-box;
 }
